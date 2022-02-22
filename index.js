@@ -30,8 +30,14 @@ const SocialsBar = () => {
 const LogoBar = () => {
     return (
         <div>
-            <div className="site-logo col-md-3 col-sm-4 col-xs-6 p-3">
-                <img src="../images/logo/blockspaces-logo.png" alt="blockspaces logo" />
+            <div className="site-logo col-md-6 col-sm-8 col-xs-9 p-4">
+                <div className="d-flex justify-content-start align-items-center">
+                    <img src="./images/logo/logo.jpg" className="mx-3" alt="blospace logo" width="70px" />
+                    <div>
+                        <span className="text-primary h2">BLOKSPACE</span><br/>
+                        <h4 className="text-primary">Security</h4>
+                    </div>
+                </div>
             </div>
         </div>
     );
@@ -65,14 +71,17 @@ const BannerSection = () => {
                     <Col className="banner-text" md={6} sm={12}>
                         <h2 className="text-white text-bold mb-5">BLOCKCHAIN INTEGRATION. SIMPLIFIED.</h2>
                         <p className="text-white text-bold mb-5">
-                            The BlockSpaces Platform connects business applications to blockchain 
-                            networks through managed infrastructure and configurable drag and drop 
-                            workflows with clicks-or-code.
+                            BLOK SPACE SECURITY LIMITED is a private limited company based in 12-15 Wenlock Road, 
+                            Manchester, England which employs over 10 people. The company started on 2016-04-02. 
+                            The company also has a branch at the United States which is manages by the Chief Blockchain Manager. 
+                            It's main line of business activity is development of blockchain projects, which provide 
+                            security on blockchain project.
                         </p>
                         <ul className="text-white mb-5">
                             <li className="text-white text-bold">Prebuilt Connectors {"&"} APIs</li>
                             <li className="text-white text-bold">Managed Web3 Infrastructure</li>
                             <li className="text-white text-bold">Performance {"&"} Analytics</li>
+                            <li className="text-white text-bold">Recover Lost Token</li>
                         </ul>
                         <Button className="p-3 btn-secondary text-white text-bold">PLATFORM OVERVIEW</Button>
                     </Col>
@@ -157,6 +166,25 @@ const FeaturesSection = () => {
     );
 }
 
+const LeadershipSection = () => {
+    return (
+        <div className="site-section bg-primary-lighter">
+            <div className="leadership-main">
+                <div className="leadership-heading"></div>
+                <div className="leadership-slides row text-center">
+                    <Col md={4} sm={6} xs={12} className="bg-white">
+                        <div className="leadership-hero p-3">
+                            <img src="./images/portraits/george" className="rounded-circle" alt="george photo" />
+                        </div>
+                        <p className="text-bold">George tyler</p>
+                        <p className="text-small text-muted">Chief Executive Officer | Co-Founder</p>
+                    </Col>
+                </div>
+            </div>
+        </div>
+    );
+}
+
 const ClosingSection = () => {
     return (
         <div className="site-section-small my-auto p-4 bg-primary-light">
@@ -175,9 +203,9 @@ const ClosingSection = () => {
 
 const Footer = () => {
     return (
-        <div className="site-section bg-primary-lighter p-5">
-            <Row className="p-5">
-                <Col md={3} sm={6} xs={10} className="p-3 mb-4">
+        <div className="site-section bg-primary-lighter">
+            <Row className="p-2">
+                <Col lg={3} md={6} xs={10} className="p-3 mb-4">
                     <h6 className="text-bolder mb-5">WHAT WE DO</h6>
                     <span className="text-small text-muted">BLOCKCHAIN INTEGRATION</span><br/>
                     <span className="text-small text-muted">BUSINESS GROWTH AND INNOVATION</span><br/>
@@ -187,23 +215,25 @@ const Footer = () => {
                     <span className="text-small text-muted">SECURE BLOCKCHAIN INFRASTRUCTURE SOLUTIONS</span><br/>
                     <span className="text-small text-muted">CAN BLOCKCHAIN HELP FOOD DESERTS?</span><br/>
                 </Col>
-                <Col md={3} sm={6} xs={10} className="p-3 mb-4">
+                <Col lg={3} md={6} xs={10} className="p-3 mb-4">
                     <h6 className="text-bolder mb-5">COMPANY</h6>
                     <span className="text-small text-muted">LEADING BLOCKCHAIN TEAM</span><br/>
                     <span className="text-small text-muted">CAREERS</span><br/>
                     <span className="text-small text-muted">CUSTOMER LOGIN</span><br/>
                 </Col>
-                <Col md={3} sm={6} xs={10} className="p-3 mb-4">
+                <Col lg={3} md={6} xs={10} className="p-3 mb-4">
                     <h6 className="text-bolder mb-5">RESOURCES</h6>
                     <span className="text-small text-muted">CUSTOMER USE CASES</span><br/>
                     <span className="text-small text-muted">IN THE NEWS</span><br/>
                     <span className="text-small text-muted">BLOGS AND ANNOUCEMENTS</span><br/>
                     <span className="text-small text-muted">PODCASTS AND VIDEOS</span><br/>
                 </Col>
-                <Col md={3} sm={6} xs={10} className="text-center p-3 mb-4">
+                <Col lg={3} md={6} xs={10} className="text-center p-3 mb-4">
                     <img src="./images/logo/blockspaces-logo-tagline.png" alt="block spaces logo with tagline" />
-                    <span>802 E. Whiting Street Tampa, Florida.</span><br/>
-                    <span className="text-secondary">813-500-8585</span><br/>
+                    <span className="text-small text-muted">USA Address: 208 E whiting St, Tampa m, FL. 33602 USA</span><br/>
+                    <span className="text-secondary">+19043645460</span><br/>
+                    <span className="text-small text-muted">UK Address: 12-15 Wenlock Road, Manchester, England, N17GU</span><br/>
+                    <span className="text-secondary">+44 7401 309244</span><br/>
                     <span className="text-secondary">info@blockspaces.com</span><br/>
                 </Col>
             </Row>
@@ -213,20 +243,18 @@ const Footer = () => {
 
 const FooterExtras = () => {
     return (
-        <div className="bg-primary p-5">
-            <Row className="p-4">
+        <div className="bg-primary">
+            <Row className="p-3">
                 <Col md={6} xs={12} className="text-left">
                     <div>©2021 Copyright - BlockSpaces, Inc. | All Rights Reserved.</div>
                     <div>Terms of Service   Privacy Policy    Harassment Policy</div>
                 </Col>
-                <Col md={6} xs={12} className="text-right">
-                    <Row>
-                        <Col><a href="" target="_blank"><i className="fa fa-facebook"></i></a></Col>
-                        <Col><a href="" target="_blank"><i className="fa fa-twitter"></i></a></Col>
-                        <Col><a href="" target="_blank"><i className="fa fa-youtube"></i></a></Col>
-                        <Col><a href="" target="_blank"><i className="fa fa-linkedin"></i></a></Col>
-                        <Col><a href="" target="_blank"><i className="fa fa-sign-in"></i></a></Col>
-                    </Row>
+                <Col md={6} xs={12} className="text-right d-flex justify-content-center">
+                    <div className="f-socials p-3"><i className="fa fa-facebook"></i></div>
+                    <div className="f-socials p-3"><i className="fa fa-twitter"></i></div>
+                    <div className="f-socials p-3"><i className="fa fa-youtube"></i></div>
+                    <div className="f-socials p-3"><i className="fa fa-linkedin"></i></div>
+                    <div className="f-socials p-3"><i className="fa fa-sign-in"></i></div>
                 </Col>
             </Row>
         </div>
