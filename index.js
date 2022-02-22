@@ -106,7 +106,8 @@ const FeaturesSection = () => {
             <div className="row p-5">
                 <Col className="text-center p-3 mb-3" md={6} sm={12}>
                     <div className="bs-connect-heading mb-3">
-                        <img src="./images/logo/blockspaces-connect.png" alt="" width="" />
+                        {/* <img src="./images/logo/blockspaces-connect.png" alt="" width="" /> */}
+                        <h3>BLOKSPACES <br /> CONNECT</h3>
                     </div>
                     <div className="bs-conect-tagline mb-4">
                         <span className="text-bolder font-italic">Connecting businesses to blockchain</span>
@@ -122,7 +123,8 @@ const FeaturesSection = () => {
                 </Col>
                 <Col className="text-center p-3 mb-3" md={6} sm={12}>
                     <div className="bs-connect-heading mb-3">
-                        <img src="./images/logo/blockspaces-build.png" alt="" width="" />
+                        {/* <img src="./images/logo/blockspaces-build.png" alt="" width="" /> */}
+                        <h3>BLOKSPACES <br /> BUILD</h3>
                     </div>
                     <div className="bs-conect-tagline mb-4">
                         <span className="text-bolder font-italic">Building blockchains for businesses</span>
@@ -147,7 +149,7 @@ const FeaturesSection = () => {
                         in an immutable, trusted manner.
                     </p>
                     <p className="text-justify">
-                        With BlockSpaces Connect, we take the mystery out of blockchain integration and simplify 
+                        With BlokSpaces Connect, we take the mystery out of blockchain integration and simplify 
                         data connections between disparate systems.  Delivered with a code-free interface without 
                         requiring significant technical expertise, Connect is built for the specific challenges 
                         of blockchain integration.
@@ -170,13 +172,29 @@ const LeadershipSection = () => {
     return (
         <div className="site-section bg-primary-lighter">
             <div className="leadership-main">
-                <div className="leadership-heading"></div>
-                <div className="leadership-slides row text-center">
-                    <Col md={4} sm={6} xs={12} className="bg-white">
+                <div className="leadership-heading text-center">
+                    <h2>Our Leadership</h2>
+                </div>
+                <div className="leadership-slides row justify-content-center ">
+                    <Col md={3} sm={5} xs={10} className="bg-white text-center rounded m-3">
                         <div className="leadership-hero p-3">
-                            <img src="./images/portraits/george" className="rounded-circle" alt="george photo" />
+                            <img src="./images/portraits/george.jpg" className="rounded-circle" width="200px" alt="george photo" />
                         </div>
-                        <p className="text-bold">George tyler</p>
+                        <p className="text-bold">George Tyler</p>
+                        <p className="text-small text-muted">Chief Executive Officer | Co-Founder</p>
+                    </Col>
+                    <Col md={3} sm={5} xs={10} className="bg-white text-center rounded m-3">
+                        <div className="leadership-hero p-3">
+                            <img src="./images/portraits/alice.jpg" className="rounded-circle" width="200px" height="200px" alt="alice photo" />
+                        </div>
+                        <p className="text-bold">Alice Sosa Sores</p>
+                        <p className="text-small text-muted">Chief Blockchain Officer | Co-Founder</p>
+                    </Col>
+                    <Col md={3} sm={5} xs={10} className="bg-white text-center rounded m-3">
+                        <div className="leadership-hero p-3 rounded">
+                            <img src="./images/portraits/george.jpg" className="rounded-circle" width="200px" alt="Chen SU Li photo" />
+                        </div>
+                        <p className="text-bold">Chen Su Li</p>
                         <p className="text-small text-muted">Chief Executive Officer | Co-Founder</p>
                     </Col>
                 </div>
@@ -229,12 +247,18 @@ const Footer = () => {
                     <span className="text-small text-muted">PODCASTS AND VIDEOS</span><br/>
                 </Col>
                 <Col lg={3} md={6} xs={10} className="text-center p-3 mb-4">
-                    <img src="./images/logo/blockspaces-logo-tagline.png" alt="block spaces logo with tagline" />
+                    <div className="d-flex justify-content-start align-items-center">
+                        <img src="./images/logo/logo.jpg" className="mx-3" alt="blospace logo" width="70px" />
+                        <div className="text-left">
+                            <span className="text-primary h2">BLOKSPACE</span><br/>
+                            <h4 className="text-primary">Security</h4>
+                        </div>
+                    </div>
                     <span className="text-small text-muted">USA Address: 208 E whiting St, Tampa m, FL. 33602 USA</span><br/>
                     <span className="text-secondary">+19043645460</span><br/>
                     <span className="text-small text-muted">UK Address: 12-15 Wenlock Road, Manchester, England, N17GU</span><br/>
                     <span className="text-secondary">+44 7401 309244</span><br/>
-                    <span className="text-secondary">info@blockspaces.com</span><br/>
+                    <span className="text-secondary">blokspaces.netlify@ccmail.uk</span><br/>
                 </Col>
             </Row>
         </div>
@@ -274,6 +298,7 @@ class App extends Component {
           <Header />
           <BannerSection />
           <FeaturesSection />
+          <LeadershipSection />
           <ClosingSection />
           <Footer />
           <FooterExtras />
