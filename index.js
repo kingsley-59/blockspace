@@ -192,10 +192,10 @@ const LeadershipSection = () => {
                     </Col>
                     <Col md={3} sm={5} xs={10} className="bg-white text-center rounded m-3">
                         <div className="leadership-hero p-3 rounded">
-                            <img src="./images/portraits/george.jpg" className="rounded-circle" width="200px" alt="Chen SU Li photo" />
+                            <img src="./images/portraits/chen-li.jpg" className="rounded-circle" width="200px" alt="Chen SU Li photo" />
                         </div>
                         <p className="text-bold">Chen Su Li</p>
-                        <p className="text-small text-muted">Chief Executive Officer | Co-Founder</p>
+                        <p className="text-small text-muted">Technical Project Lead</p>
                     </Col>
                 </div>
             </div>
