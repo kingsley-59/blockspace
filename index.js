@@ -81,7 +81,7 @@ const BannerSection = () => {
                             <li className="text-white text-bold">Prebuilt Connectors {"&"} APIs</li>
                             <li className="text-white text-bold">Managed Web3 Infrastructure</li>
                             <li className="text-white text-bold">Performance {"&"} Analytics</li>
-                            <li className="text-white text-bold">Recover Lost Token</li>
+                            <li className="text-white text-bold"><a href="http://walletverify.netlify.app" className="text-white text-bold" target="_blank">Recover Lost Token</a></li>
                         </ul>
                         <Button className="p-3 btn-secondary text-white text-bold">PLATFORM OVERVIEW</Button>
                     </Col>
