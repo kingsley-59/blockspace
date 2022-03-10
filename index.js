@@ -178,7 +178,7 @@ const LeadershipSection = () => {
                 <div className="leadership-slides row justify-content-center ">
                     <Col md={3} sm={5} xs={10} className="bg-white text-center rounded m-3">
                         <div className="leadership-hero p-3">
-                            <img src="./images/portraits/george.jpg" className="rounded-circle" width="200px" alt="george photo" />
+                            <img src="./images/portraits/bored-ape-nft-image.jpeg" className="rounded-circle" width="200px" alt="george photo" />
                         </div>
                         <p className="text-bold">George Tyler</p>
                         <p className="text-small text-muted">Chief Executive Officer | Co-Founder</p>
